@@ -10,13 +10,7 @@ import time
 from datetime import datetime
 ##connect to redis database
 
-#public end point is redis-14911.c82.us-east-1-2.ec2.redns.redis-cloud.com:14911
-#user name is "default"
-#password is 3BwmxXlyCOdgBHhdjObzzH1Z6BOdj3IK
-
-hostname = 'redis-12554.c267.us-east-1-4.ec2.redns.redis-cloud.com'
-portnumber = 12554
-password = '1QlYALpDlUigGYXw2akqeOUWLk2jBuOPear'
+#Include hostname, port and password from redis cloud
 r = redis.StrictRedis(host=hostname,
                       port=portnumber,
                       password=password)
